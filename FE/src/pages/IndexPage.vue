@@ -1,17 +1,21 @@
 <template>
   <q-page class="flex flex-center">
-    <img
-      alt="Quasar logo"
-      src="~assets/quasar-logo-vertical.svg"
-      style="width: 200px; height: 200px"
-    >
+    <div class="q-pa-md q-gutter-y-md" style="max-width: 400px">
+
+      <q-btn label="Create User" @click="$router.push('/users/create')" />
+
+    </div>
   </q-page>
 </template>
 
 <script>
-import { defineComponent } from 'vue'
+
+import {defineComponent} from 'vue'
 
 export default defineComponent({
-  name: 'IndexPage'
+  name: 'IndexPage',
+  setup() {
+
+  }
 })
 </script>
